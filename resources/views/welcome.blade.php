@@ -81,7 +81,10 @@
 
             <div class="content">
                 <div class="title m-b-md">
+                
                     BIENVENIDOS
+                    <br>
+                    <h5>Autismo e Integracion Digital</h5>
                 </div>
 
                 <div class="links">
