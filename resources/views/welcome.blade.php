@@ -81,11 +81,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    BIENVENIDOS
+                    BIENVENIDOS!!!
                 </div>
 
                 <div class="links">
-                    
+                   
                 </div>
             </div>
         </div>
