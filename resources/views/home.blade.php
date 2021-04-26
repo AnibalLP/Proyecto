@@ -36,7 +36,7 @@
           <a class="nav-link active" aria-current="page" href="#">Comunidad para Padres</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Conocienod mis Derechos</a>
+          <a class="nav-link active" aria-current="page" href="#">Conociendo mis Derechos</a>
         </li>
         
       </ul>
