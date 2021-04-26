@@ -81,14 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-<<<<<<< HEAD
                     BIENVENIDOS!!!
-=======
-                
-                    BIENVENIDOS
-                    <br>
-                    <h5>Autismo e Integracion Digital</h5>
->>>>>>> f6daf663815b471badd604f6984b24aa951cfc1d
                 </div>
 
                 <div class="links">
