@@ -80,12 +80,15 @@
             @endif
 
             <div class="content">
+                
                 <div class="title m-b-md">
-                    BIENVENIDOS!!!
-                </div>
-
-                <div class="links">
-                   
+                <nav class="navbar navbar-light bg-main">
+                  <div class="container p-4">
+                      <a class="navbar-brand m-auto" href="#">
+                     <img src="{{asset('images/LOGO.png')}}" width="800" alt="" loading="lazy">
+                  </a>
+                  </div>
+               </nav>
                 </div>
             </div>
         </div>
