@@ -11,41 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-info">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><a class="navbar-brand m-auto" href="#">
-                    <img src="{{asset('images/LOGO.png')}}" width="150" alt="" loading="lazy">
-                </a>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Información</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contenido</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Ayuda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Comunidad para Padres</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Conociendo mis Derechos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Misión y Visión</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="app">
     <nav class="navbar navbar-light bg-main">
         <div class="container p-4">
             <a class="navbar-brand m-auto" href="#">
@@ -53,7 +19,7 @@
             </a>
         </div>
     </nav>
-
+</div>
     <div class="row justify-content-center">
         <div class="col-3">
             <h5>(Aun no tenemos las rutas)</h5>
@@ -65,6 +31,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
         integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
     </script>
+
 </body>
 
 </html>
