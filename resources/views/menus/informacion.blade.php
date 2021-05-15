@@ -11,72 +11,74 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-main">
-        <div class="container p-4">
-            <a class="navbar-brand m-auto" href="#">
-                <img src="{{asset('images/LOGO.png')}}" width="200" alt="" loading="lazy">
-            </a>
-        </div>
-    </nav>
-    <section class="container-fluid content py-5">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-7 text-center">
-                <h1>Información</h1>
-                <hr>
-                <img src="images/autismo.jpg" width="700" alt="Post Javascript" class="img-fluid">
-                <p class="text-left">
-                    El objetivo de esta web app es brindar
-                    ayuda a los adolescentes que padezcan
-                    del Trastorno del Espetro Autista (TEA)
-                    haciendo uso de herramientas digitales como
-                    audio, video, imágenes y sonidos, que brinden
-                    conocimientos necesarios que ayuden en la
-                    integración social y digital de estas personas.
-                </p>
+    <div id="app">
+        <nav class="navbar navbar-light bg-main">
+            <div class="container p-4">
+                <a class="navbar-brand m-auto" href="#">
+                    <img src="{{asset('images/LOGO.png')}}" width="200" alt="" loading="lazy">
+                </a>
             </div>
-        </div>
-    </section>
-    <section class="container-fluid content py-5">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                <h2>Mas informacion acerca de autismo</h2>
-                <hr class="post-hr">
+        </nav>
+        <section class="container-fluid content py-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-7 text-center">
+                    <h1>Información</h1>
+                    <hr>
+                    <img src="images/autismo.jpg" width="700" alt="Post Javascript" class="img-fluid">
+                    <p class="text-left">
+                        El objetivo de esta web app es brindar
+                        ayuda a los adolescentes que padezcan
+                        del Trastorno del Espetro Autista (TEA)
+                        haciendo uso de herramientas digitales como
+                        audio, video, imágenes y sonidos, que brinden
+                        conocimientos necesarios que ayuden en la
+                        integración social y digital de estas personas.
+                    </p>
+                </div>
             </div>
-            <div class="col-md-4 col-12 justify-content-center mb-5">
-                <div class="card m-auto" style="width: 18rem;">
-                    <img class="card-img-top" src="{{asset('images/au1.jpg')}}" alt="Post Python">
-                    <div class="card-body">
-                        <h5 class="card-title my-2">Aun no definido</h5>
-                        <div class="d-card-text">
-                            Esta informacion aun no esta disponible para mostrar
+        </section>
+        <section class="container-fluid content py-5">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2>Mas informacion acerca de autismo</h2>
+                    <hr class="post-hr">
+                </div>
+                <div class="col-md-4 col-12 justify-content-center mb-5">
+                    <div class="card m-auto" style="width: 18rem;">
+                        <img class="card-img-top" src="{{asset('images/au1.jpg')}}" alt="Post Python">
+                        <div class="card-body">
+                            <h5 class="card-title my-2">Aun no definido</h5>
+                            <div class="d-card-text">
+                                Esta informacion aun no esta disponible para mostrar
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 justify-content-center mb-5">
+                    <div class="card m-auto" style="width: 18rem;">
+                        <img class="card-img-top" src="{{asset('images/au2.jpg')}}" alt="Post Python">
+                        <div class="card-body">
+                            <h5 class="card-title my-2">Aun no definido</h5>
+                            <div class="d-card-text">
+                                Esta informacion aun no esta disponible para mostrar
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 justify-content-center mb-5">
+                    <div class="card m-auto" style="width: 18rem;">
+                        <img class="card-img-top" src="{{asset('images/au3.jpg')}}" alt="Post Python">
+                        <div class="card-body">
+                            <h5 class="card-title my-2">Aun no definido</h5>
+                            <div class="d-card-text">
+                                Esta informacion aun no esta disponible para mostrar
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-12 justify-content-center mb-5">
-                <div class="card m-auto" style="width: 18rem;">
-                    <img class="card-img-top" src="{{asset('images/au2.jpg')}}" alt="Post Python">
-                    <div class="card-body">
-                        <h5 class="card-title my-2">Aun no definido</h5>
-                        <div class="d-card-text">
-                            Esta informacion aun no esta disponible para mostrar
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-12 justify-content-center mb-5">
-                <div class="card m-auto" style="width: 18rem;">
-                    <img class="card-img-top" src="{{asset('images/au3.jpg')}}" alt="Post Python">
-                    <div class="card-body">
-                        <h5 class="card-title my-2">Aun no definido</h5>
-                        <div class="d-card-text">
-                            Esta informacion aun no esta disponible para mostrar
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
         integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
     </script>

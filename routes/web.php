@@ -17,4 +17,4 @@ Route::get('/',function(){
   //  return 'hola perra';
   return view('welcome');
 });
-Route::view('menus','informacion');
+

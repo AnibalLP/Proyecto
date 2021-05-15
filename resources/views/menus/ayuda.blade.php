@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<h5>Aun no hay contenido</h5>
+<div id="app"><h5>Aun no hay contenido</h5></div>
 
 
 
