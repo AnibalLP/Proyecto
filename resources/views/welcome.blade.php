@@ -42,18 +42,18 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <div class="w3-top">
     <div class="w3-bar w3-red w3-card w3-left-align w3-large">
         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="#"  @click="menu=0" class="w3-bar-item w3-button w3-padding-large w3-hover-white" v-bind:class="{ 'w3-white': menu==0}">Informacion</a>
-        <a href="#" @click="menu=1" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" v-bind:class="{ 'w3-white': menu==1}">contenido</a>
-        <a href="#" @click="menu=2" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" v-bind:class="{ 'w3-white': menu==2}">ayuda</a>
-        <a href="#" @click="menu=3" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" v-bind:class="{ 'w3-white': menu==2}">comunidad para padres</a>
-        <a href="#" @click="menu=4" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" v-bind:class="{ 'w3-white': menu==2}">Conociendo mis derechos</a>
-        <a href="#" @click="menu=5" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" v-bind:class="{ 'w3-white': menu==2}">mision y vision</a>
+        <a href="#"  @click="menu=0" class="w3-bar-item w3-button w3-padding-large w3-hover-white" v-bind:class="{ 'w3-white': menu==0}">Información</a>
+        <a href="#" @click="menu=1" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" v-bind:class="{ 'w3-white': menu==1}">Contenido</a>
+        <a href="#" @click="menu=2" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" v-bind:class="{ 'w3-white': menu==2}">Ayuda</a>
+        <a href="#" @click="menu=3" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" v-bind:class="{ 'w3-white': menu==2}">Comunidad para Padres</a>
+        <a href="#" @click="menu=4" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" v-bind:class="{ 'w3-white': menu==2}">Conociendo mis Derechos</a>
+        <a href="#" @click="menu=5" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" v-bind:class="{ 'w3-white': menu==2}">Misión y Visión</a>
     </div>
 
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-        <a href="#" @click="menu=0" class="w3-bar-item w3-button w3-padding-large">informacion</a>
-        <a href="#" @click="menu=1" class="w3-bar-item w3-button w3-padding-large">contenido</a>
+        <a href="#" @click="menu=0" class="w3-bar-item w3-button w3-padding-large">Información</a>
+        <a href="#" @click="menu=1" class="w3-bar-item w3-button w3-padding-large">Contenido</a>
         <a href="#" @click="menu=2" class="w3-bar-item w3-button w3-padding-large">ayuda</a>
         <a href="#" @click="menu=3" class="w3-bar-item w3-button w3-padding-large">comunidad para padres</a>
         <a href="#" @click="menu=4" class="w3-bar-item w3-button w3-padding-large">conociendo mis derechos</a>
