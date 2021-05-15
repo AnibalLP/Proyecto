@@ -54,10 +54,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
         <a href="#" @click="menu=0" class="w3-bar-item w3-button w3-padding-large">Información</a>
         <a href="#" @click="menu=1" class="w3-bar-item w3-button w3-padding-large">Contenido</a>
-        <a href="#" @click="menu=2" class="w3-bar-item w3-button w3-padding-large">ayuda</a>
-        <a href="#" @click="menu=3" class="w3-bar-item w3-button w3-padding-large">comunidad para padres</a>
-        <a href="#" @click="menu=4" class="w3-bar-item w3-button w3-padding-large">conociendo mis derechos</a>
-        <a href="#" @click="menu=5" class="w3-bar-item w3-button w3-padding-large">mision y vision</a>
+        <a href="#" @click="menu=2" class="w3-bar-item w3-button w3-padding-large">Ayuda</a>
+        <a href="#" @click="menu=3" class="w3-bar-item w3-button w3-padding-large">Comunidad para Padres</a>
+        <a href="#" @click="menu=4" class="w3-bar-item w3-button w3-padding-large">Conociendo mis Derechos</a>
+        <a href="#" @click="menu=5" class="w3-bar-item w3-button w3-padding-large">Misin y Visión</a>
 
     </div>
     </div>
