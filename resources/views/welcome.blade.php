@@ -1,82 +1,55 @@
 <!DOCTYPE html>
-<html lang="es">
-<title>TEA</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="csrf-token" content="{{ csrf_token() }}">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- Añadimos la libreria animate -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
-<link href="{{asset('css/app.css')}}" rel="stylesheet">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-.header-page{
-    background-color: #8836f4;
-    padding-bottom: 4rem;
-    padding-top: 4rem;
-    margin-bottom: 4rem;
-    color: white;
-    font-weight: bold;
-}
-.btn-theme{
-    background-color:#36c8f4;
-    color:white;
-}
-.img{
-    width:100%;
-}
-.img-about{
-    width:700px;
-    text-align: center;
-}
-</style>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Laravel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+
 <body>
-<div id="app" >
-    <!-- Navbar -->
-    <div class="w3-top">
-    <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="#"  @click="menu=0" class="w3-bar-item w3-button w3-padding-large w3-hover-white" v-bind:class="{ 'w3-white': menu==0}">Información</a>
-        <a href="#" @click="menu=1" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" v-bind:class="{ 'w3-white': menu==1}">Contenido</a>
-        <a href="#" @click="menu=2" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" v-bind:class="{ 'w3-white': menu==2}">Ayuda</a>
-        <a href="#" @click="menu=3" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" v-bind:class="{ 'w3-white': menu==2}">Comunidad para Padres</a>
-        <a href="#" @click="menu=4" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" v-bind:class="{ 'w3-white': menu==2}">Conociendo mis Derechos</a>
-        <a href="#" @click="menu=5" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" v-bind:class="{ 'w3-white': menu==2}">Misión y Visión</a>
-    </div>
+    <nav class="navbar navbar-light navbar-expand-lg" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">INTEGRACION DIGITAL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('informacion.Informacion') }}">Información</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('contenido.Contenido') }}">Contenido</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('ayuda.Ayuda') }}">Ayuda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('comunidad.Comunidad') }}">Comunidad para Padres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('derechos.Derechos') }}">Conociendo mis Derechos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('mision.mision') }}">Misión y Visión</a>
+                    </li>
+                </ul>
 
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-        <a href="#" @click="menu=0" class="w3-bar-item w3-button w3-padding-large">Información</a>
-        <a href="#" @click="menu=1" class="w3-bar-item w3-button w3-padding-large">Contenido</a>
-        <a href="#" @click="menu=2" class="w3-bar-item w3-button w3-padding-large">Ayuda</a>
-        <a href="#" @click="menu=3" class="w3-bar-item w3-button w3-padding-large">Comunidad para Padres</a>
-        <a href="#" @click="menu=4" class="w3-bar-item w3-button w3-padding-large">Conociendo mis Derechos</a>
-        <a href="#" @click="menu=5" class="w3-bar-item w3-button w3-padding-large">Misin y Visión</a>
+            </div>
+        </div>
+    </nav>
+</body>
 
-    </div>
-    </div>
-    <!--Contenido dinamico que irá cambiando sin refrescar la pagina-->
-    <div>
-        @yield('content')
-    </div>
-    <!-- Footer -->
-  
-</div>
-<script src="js/app.js"></script>
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+</script>
+
+</html>
